@@ -1,0 +1,1966 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa4bac89a8f14047b85eed2306d5309, type: 3}
+  m_Name: RotationSystem
+  m_EditorClassIdentifier: uNode3.DOTS::MaxyGames.UNode.ECSGraph
+  icon: {fileID: 0}
+  m_serializedGraph:
+    serializedGraph:
+      rid: 4987709242143146176
+    owner: {fileID: 11400000}
+    serializedData:
+      format: 0
+      references: []
+      data: 
+      serializationNodes: []
+      serializedType: 
+  namespace: HelloCube.EnableableComponents
+  usingNamespaces:
+  - Unity.Burst
+  - Unity.Entities
+  - Unity.Transforms
+  - Unity.Mathematics
+  - Unity.Collections
+  modifier:
+    Public: 1
+    Private: 0
+    Protected: 0
+    Internal: 0
+    Abstract: 0
+    Static: 0
+    Sealed: 0
+    Partial: 1
+    ReadOnly: 0
+  inheritType:
+    kind: 1
+    serializedString: System.ValueType
+    serializedBytes: 
+    references: []
+  burstCompile: 1
+  requiredForUpdates:
+  - kind: 1
+    serializedString: HelloCube.ExecuteEnableableComponents
+    serializedBytes: 
+    references: []
+  systemOrder: []
+  scriptData:
+    fileName: RotationSystem
+    selfTypeData:
+      typeName: HelloCube.EnableableComponents.RotationSystem
+      reference: {fileID: 0}
+    typeDatas: []
+    debug: 0
+    debugValueNode: 1
+    compileToScript: 1
+    unityObjects: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4987709242143146176
+      type: {class: SerializedGraph/GraphData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        graph:
+          rid: 4987709242143146177
+    - rid: 4987709242143146177
+      type: {class: Graph, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: RotationSystem
+        _id: 0
+        _comment: 
+        _parent:
+          rid: -2
+        childs:
+        - rid: 4987709242143146178
+        - rid: 4987709242143146179
+        - rid: 4987709242143146184
+        - rid: 4987709242143146185
+        - rid: 4987709242143146280
+        expanded: 1
+        graphLayout: 0
+        attributes: []
+        m_UniqueID: 41
+    - rid: 4987709242143146178
+      type: {class: FunctionContainer, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 1
+        _comment: 
+        _parent:
+          rid: 4987709242143146177
+        childs: []
+        expanded: 1
+    - rid: 4987709242143146179
+      type: {class: EventGraphContainer, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 2
+        _comment: 
+        _parent:
+          rid: 4987709242143146177
+        childs:
+        - rid: 4987709242143146180
+        expanded: 1
+    - rid: 4987709242143146180
+      type: {class: MainGraphContainer, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 3
+        _comment: 
+        _parent:
+          rid: 4987709242143146179
+        childs:
+        - rid: 4987709242143146182
+        - rid: 4987709242143146206
+        - rid: 4987709242143146235
+        - rid: 4987709242143146243
+        - rid: 4987709242143146263
+        - rid: 4987709242143146307
+        - rid: 4987709242143146344
+        - rid: 4987709249039630413
+        - rid: 4987709709510508564
+        - rid: 4987709709510508623
+        - rid: 4987709709510508632
+        - rid: 4987709709510508649
+        - rid: 4987709709510508741
+        - rid: 4987709709510508742
+        - rid: 4987709709510508756
+        - rid: 4987709709510508791
+        - rid: 4987709709510508830
+        - rid: 4987709709510508852
+        expanded: 1
+    - rid: 4987709242143146182
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 5
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 200
+          y: 0
+          width: 131
+          height: 155
+        _nodeSerializedData:
+          data: 022f0000000001310000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004f006e00530079007300740065006d005500700064006100740065002c00200075004e006f006400650033002e0044004f00540053000000000017010b0000006f007500740070007500740043006f0075006e0074000100000005
+          serializedReferences: []
+          serializedValueInput: []
+          serializedValueOutput:
+          - rid: 4987709242143146188
+          - rid: 4987709242143146189
+          - rid: 4987709242143146190
+          - rid: 4987709242143146191
+          serializedFlowInput: []
+          serializedFlowOutput:
+          - rid: 4987709242143146192
+          serializedType: MaxyGames.UNode.Nodes.OnSystemUpdate
+        _invalidPorts: []
+    - rid: 4987709242143146184
+      type: {class: VariableContainer, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 7
+        _comment: 
+        _parent:
+          rid: 4987709242143146177
+        childs:
+        - rid: 4987709709510508552
+        - rid: 4987709709510508553
+        expanded: 1
+    - rid: 4987709242143146185
+      type: {class: PropertyContainer, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 8
+        _comment: 
+        _parent:
+          rid: 4987709242143146177
+        childs: []
+        expanded: 1
+    - rid: 4987709242143146188
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: state
+        _name: state
+        connections: []
+    - rid: 4987709242143146189
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: deltaTime
+        _name: deltaTime
+        connections:
+        - rid: 4987709242143146349
+        - rid: 4987709709510508835
+    - rid: 4987709242143146190
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: elapsedTime
+        _name: elapsedTime
+        connections: []
+    - rid: 4987709242143146191
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: entityManager
+        _name: entityManager
+        connections: []
+    - rid: 4987709242143146192
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: flow:0
+        _name: 
+        connections:
+        - rid: 4987709709510508579
+    - rid: 4987709242143146206
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Foreach ( Entities ) 3
+        _id: 9
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 134.99991
+          y: 895
+          width: 377
+          height: 142
+        _nodeSerializedData:
+          data: 022f0000000001320000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0045006e0074006900740069006500730046006f00720065006100630068002c00200075004e006f006400650033002e0044004f005400530000000000010105000000640061007400610073002f010000000166000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0045006e0074006900740069006500730046006f00720065006100630068002b0044006100740061002c00200075004e006f006400650033002e0044004f00540053005d005d002c0020006d00730063006f0072006c006900620001000000060200000000000000022f0200000001370000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0045006e0074006900740069006500730046006f00720065006100630068002b0044006100740061002c00200075004e006f006400650033002e0044004f00540053000200000027010200000069006400011000000031003900310063003300340037006300370066003100650037006600310065002701040000006e0061006d00650001090000007400720061006e007300660072006f006d000b01040000007400790070006500000000001d01040000006b0069006e0064000100000000000000050230020000000300000027010200000069006400011000000033003900330039003900620031006300370031006200610030003500630061002701040000006e0061006d0065000105000000730070006500650064000b01040000007400790070006500010000001d01040000006b0069006e00640000000000000000000507051d0105000000720075006e004f006e0000000000000000002b010c0000006200750072007300740043006f006d00700069006c006500001d01070000006f007000740069006f006e00730000000000000000001d010900000069006e006400650078004b0069006e006400000000000000000001010c00000071007500650072007900460069006c0074006500720073002f03000000015a000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e0045004300530051007500650072007900460069006c007400650072002c00200075004e006f006400650033002e0044004f00540053005d005d002c0020006d00730063006f0072006c0069006200040000000600000000000000000705010119000000770069007400680053006800610072006500640043006f006d0070006f006e0065006e007400460069006c007400650072002f04000000015a000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e00530065007200690061006c0069007a006500640054007900700065002c00200075004e006f006400650033002e0043006f00720065005d005d002c0020006d00730063006f0072006c006900620005000000060000000000000000070505
+          serializedReferences:
+          - value:
+              rid: 4987709242143146218
+            unityObject: {fileID: 0}
+          - value:
+              rid: 4987709709510508843
+            unityObject: {fileID: 0}
+          serializedValueInput: []
+          serializedValueOutput:
+          - rid: 4987709242143146208
+          - rid: 4987709242143146209
+          - rid: 4987709249039630411
+          serializedFlowInput:
+          - rid: 4987709242143146210
+          serializedFlowOutput:
+          - rid: 4987709242143146211
+          - rid: 4987709242143146212
+          serializedType: MaxyGames.UNode.Nodes.EntitiesForeach
+        _invalidPorts:
+        - rid: 4987709242143146220
+        - rid: 4987709249039630476
+    - rid: 4987709242143146208
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: entity
+        _name: entity
+        connections: []
+    - rid: 4987709242143146209
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 191c347c7f1e7f1e
+        _name: transfrom
+        connections:
+        - rid: 4987709242143146240
+    - rid: 4987709242143146210
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709709510508768
+    - rid: 4987709242143146211
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: body
+        _name: body
+        connections:
+        - rid: 4987709242143146276
+    - rid: 4987709242143146212
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: Exit
+        connections: []
+    - rid: 4987709242143146218
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: Unity.Transforms.LocalTransform
+        serializedBytes: 
+        references: []
+    - rid: 4987709242143146220
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 1181da7138894c25
+        _name: speed
+        connections:
+        - rid: 4987709242143146290
+    - rid: 4987709242143146235
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 4
+        _id: 10
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -52.500076
+          y: 1099.4617
+          width: 69
+          height: 26
+        _nodeSerializedData:
+          data: 022f00000000012e0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f00640065005200650072006f007500740065002c00200075004e006f006400650033002e0043006f0072006500000000001d01040000006b0069006e006400010000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709242143146236
+          serializedValueOutput:
+          - rid: 4987709242143146237
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.NodeReroute
+        _invalidPorts:
+        - rid: 4987709242143146238
+        - rid: 4987709242143146239
+    - rid: 4987709242143146236
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: input
+        _name: input
+        connections:
+        - rid: 4987709242143146240
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146237
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709242143146250
+        - rid: 4987709242143146272
+    - rid: 4987709242143146238
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections: []
+    - rid: 4987709242143146239
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709242143146240
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 1
+        input:
+          rid: 4987709242143146236
+        output:
+          rid: 4987709242143146209
+    - rid: 4987709242143146243
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 5
+        _id: 11
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 49.499924
+          y: 1125.4617
+          width: 117
+          height: 60
+        _nodeSerializedData:
+          data: 022f00000000012d0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004d0075006c007400690070007500720070006f00730065004e006f00640065002c00200075004e006f006400650033002e0043006f0072006500000000000101060000006d0065006d006200650072002f01000000012f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004d0075006c007400690070007500720070006f00730065004d0065006d006200650072002c00200075004e006f006400650033002e0043006f0072006500010000000b01060000007400610072006700650074000000000001010c00000069006e0069007400690061006c0069007a006500720073002f02000000016e000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e004d0075006c007400690070007500720070006f00730065004d0065006d006200650072002b0049006e0069007400690061006c0069007a006500720044006100740061002c00200075004e006f006400650033002e0043006f00720065005d005d002c0020006d00730063006f0072006c0069006200020000000600000000000000000705052b01130000007500730065004f007500740070007500740050006100720061006d00650074006500720073000105
+          serializedReferences:
+          - value:
+              rid: 4987709242143146244
+            unityObject: {fileID: 0}
+          serializedValueInput:
+          - rid: 4987709242143146245
+          - rid: 4987709242143146246
+          serializedValueOutput:
+          - rid: 4987709242143146247
+          serializedFlowInput:
+          - rid: 4987709242143146248
+          serializedFlowOutput:
+          - rid: 4987709242143146249
+          serializedType: MaxyGames.UNode.MultipurposeNode
+        _invalidPorts: []
+    - rid: 4987709242143146244
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 32
+        startSerializedType:
+          rid: 4987709242143146251
+        targetSerializedType:
+          rid: 4987709242143146252
+        _items:
+        - name: LocalTransform
+          reference:
+            rid: -2
+          parameters: []
+          genericArguments: []
+        - name: RotateY
+          reference:
+            rid: -2
+          parameters:
+          - name: System.Single
+            reference:
+              rid: -2
+            parameters: []
+          genericArguments: []
+        _instance:
+          rid: 4987709242143146253
+    - rid: 4987709242143146245
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: -instance
+        _name: instance
+        connections:
+        - rid: 4987709242143146250
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146246
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: -0-0
+        _name: angle
+        connections:
+        - rid: 4987709242143146319
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146247
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: out
+        _name: out
+        connections:
+        - rid: 4987709242143146274
+    - rid: 4987709242143146248
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections: []
+    - rid: 4987709242143146249
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709242143146250
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146245
+        output:
+          rid: 4987709242143146237
+    - rid: 4987709242143146251
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: Unity.Transforms.LocalTransform
+        serializedBytes: 
+        references: []
+    - rid: 4987709242143146252
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: Unity.Transforms.LocalTransform
+        serializedBytes: 
+        references: []
+    - rid: 4987709242143146253
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references: []
+          data: 
+          serializationNodes: []
+          serializedType: 
+        serializedType:
+          kind: 1
+          serializedString: System.Object
+          serializedBytes: 
+          references: []
+    - rid: 4987709242143146263
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Set Value 6
+        _id: 12
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 267.49994
+          y: 1090.4617
+          width: 77
+          height: 68
+        _nodeSerializedData:
+          data: 022f00000000012f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f0064006500530065007400560061006c00750065002c00200075004e006f006400650033002e0043006f0072006500000000001d01070000007300650074005400790070006500000000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709242143146264
+          - rid: 4987709242143146265
+          serializedValueOutput: []
+          serializedFlowInput:
+          - rid: 4987709242143146266
+          serializedFlowOutput:
+          - rid: 4987709242143146267
+          serializedType: MaxyGames.UNode.Nodes.NodeSetValue
+        _invalidPorts: []
+    - rid: 4987709242143146264
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: target
+        _name: target
+        connections:
+        - rid: 4987709242143146272
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146265
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: value
+        _name: value
+        connections:
+        - rid: 4987709242143146274
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146266
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709242143146276
+    - rid: 4987709242143146267
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709242143146272
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146264
+        output:
+          rid: 4987709242143146237
+    - rid: 4987709242143146274
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146265
+        output:
+          rid: 4987709242143146247
+    - rid: 4987709242143146276
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146266
+        output:
+          rid: 4987709242143146211
+    - rid: 4987709242143146280
+      type: {class: ConstructorContainer, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: 
+        _id: 13
+        _comment: 
+        _parent:
+          rid: 4987709242143146177
+        childs: []
+        expanded: 1
+    - rid: 4987709242143146286
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: input
+        _name: input
+        connections:
+        - rid: 4987709242143146290
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146290
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 1
+        input:
+          rid: 4987709242143146286
+        output:
+          rid: 4987709242143146220
+    - rid: 4987709242143146307
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 10
+        _id: 17
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -77.50008
+          y: 1184.4617
+          width: 116
+          height: 56
+        _nodeSerializedData:
+          data: 022f0000000001360000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004d0075006c0074006900410072006900740068006d0065007400690063004e006f00640065002c00200075004e006f006400650033002e0043006f0072006500000000001d010c0000006f00700065007200610074006f0072004b0069006e006400030000000000000001010600000069006e0070007500740073002f01000000016e000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004d0075006c0074006900410072006900740068006d0065007400690063004e006f00640065002b0050006f007200740044006100740061002c00200075004e006f006400650033002e0043006f00720065005d005d002c0020006d00730063006f0072006c006900620001000000060200000000000000022f02000000013f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004d0075006c0074006900410072006900740068006d0065007400690063004e006f00640065002b0050006f007200740044006100740061002c00200075004e006f006400650033002e0043006f00720065000200000027010200000069006400011000000034003400650031006200310035006600370035006500350065003100620037000b0104000000740079007000650000000000050230020000000300000027010200000069006400011000000031003600640066003700620032003400350064006200620034006600360036000b010400000074007900700065000100000005070505
+          serializedReferences:
+          - value:
+              rid: 4987709242143146308
+            unityObject: {fileID: 0}
+          - value:
+              rid: 4987709242143146309
+            unityObject: {fileID: 0}
+          serializedValueInput:
+          - rid: 4987709242143146310
+          - rid: 4987709242143146311
+          serializedValueOutput:
+          - rid: 4987709242143146312
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.MultiArithmeticNode
+        _invalidPorts: []
+    - rid: 4987709242143146308
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709242143146309
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709242143146310
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 44e1b15f75e5e1b7
+        _name: input 1
+        connections:
+        - rid: 4987709709510508862
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146311
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 16df7b245dbb4f66
+        _name: input 2
+        connections:
+        - rid: 4987709242143146372
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146312
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709242143146319
+    - rid: 4987709242143146319
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146246
+        output:
+          rid: 4987709242143146312
+    - rid: 4987709242143146344
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 10
+        _id: 18
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -158.50008
+          y: 1227.4617
+          width: 69
+          height: 26
+        _nodeSerializedData:
+          data: 022f00000000012e0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f00640065005200650072006f007500740065002c00200075004e006f006400650033002e0043006f0072006500000000001d01040000006b0069006e006400010000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709242143146345
+          serializedValueOutput:
+          - rid: 4987709242143146346
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.NodeReroute
+        _invalidPorts:
+        - rid: 4987709242143146347
+        - rid: 4987709242143146348
+    - rid: 4987709242143146345
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: input
+        _name: input
+        connections:
+        - rid: 4987709242143146349
+        defaultValue:
+          rid: -2
+    - rid: 4987709242143146346
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709242143146372
+    - rid: 4987709242143146347
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections: []
+    - rid: 4987709242143146348
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709242143146349
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 1
+        input:
+          rid: 4987709242143146345
+        output:
+          rid: 4987709242143146189
+    - rid: 4987709242143146372
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146311
+        output:
+          rid: 4987709242143146346
+    - rid: 4987709249039630411
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 39399b1c71ba05ca
+        _name: speed
+        connections:
+        - rid: 4987709249039630418
+    - rid: 4987709249039630413
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 11
+        _id: 20
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -345.08694
+          y: 1185
+          width: 69
+          height: 26
+        _nodeSerializedData:
+          data: 022f00000000012e0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f00640065005200650072006f007500740065002c00200075004e006f006400650033002e0043006f0072006500000000001d01040000006b0069006e006400010000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709249039630414
+          serializedValueOutput:
+          - rid: 4987709249039630415
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.NodeReroute
+        _invalidPorts:
+        - rid: 4987709249039630416
+        - rid: 4987709249039630417
+    - rid: 4987709249039630414
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: input
+        _name: input
+        connections:
+        - rid: 4987709249039630418
+        defaultValue:
+          rid: -2
+    - rid: 4987709249039630415
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709709510508856
+    - rid: 4987709249039630416
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections: []
+    - rid: 4987709249039630417
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709249039630418
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 1
+        input:
+          rid: 4987709249039630414
+        output:
+          rid: 4987709249039630411
+    - rid: 4987709249039630476
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: chunkIndexInQuery
+        _name: chunkIndexInQuery
+        connections: []
+    - rid: 4987709709510508552
+      type: {class: Variable, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: m_Timer
+        _id: 28
+        _comment: 
+        _parent:
+          rid: 4987709242143146184
+        childs: []
+        expanded: 1
+        serializedValue:
+          serializedData:
+            format: 0
+            references: []
+            data: 022f000000000117000000530079007300740065006d002e00530069006e0067006c0065002c0020006d00730063006f0072006c006900620000000000200000000005
+            serializationNodes: []
+            serializedType: System.Object
+          serializedType:
+            kind: 1
+            serializedString: System.Single
+            serializedBytes: 
+            references: []
+        resetOnEnter: 0
+        attributes: []
+        modifier:
+          Public: 1
+          Private: 0
+          Protected: 0
+          Internal: 0
+          Static: 0
+          Event: 0
+          ReadOnly: 0
+          Const: 0
+        alwaysOverride: 0
+    - rid: 4987709709510508553
+      type: {class: Variable, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: k_Interval
+        _id: 29
+        _comment: 
+        _parent:
+          rid: 4987709242143146184
+        childs: []
+        expanded: 1
+        serializedValue:
+          serializedData:
+            format: 0
+            references: []
+            data: 022f000000000117000000530079007300740065006d002e00530069006e0067006c0065002c0020006d00730063006f0072006c006900620000000000206666a63f05
+            serializationNodes: []
+            serializedType: System.Object
+          serializedType:
+            kind: 1
+            serializedString: System.Single
+            serializedBytes: 
+            references: []
+        resetOnEnter: 0
+        attributes: []
+        modifier:
+          Public: 1
+          Private: 0
+          Protected: 0
+          Internal: 0
+          Static: 0
+          Event: 0
+          ReadOnly: 0
+          Const: 1
+        alwaysOverride: 0
+    - rid: 4987709709510508564
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: m_Timer 9
+        _id: 30
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 228.00002
+          y: 221.85004
+          width: 77
+          height: 68
+        _nodeSerializedData:
+          data: 022f00000000012f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f0064006500530065007400560061006c00750065002c00200075004e006f006400650033002e0043006f0072006500000000001d01070000007300650074005400790070006500020000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508565
+          - rid: 4987709709510508566
+          serializedValueOutput: []
+          serializedFlowInput:
+          - rid: 4987709709510508567
+          serializedFlowOutput:
+          - rid: 4987709709510508568
+          serializedType: MaxyGames.UNode.Nodes.NodeSetValue
+        _invalidPorts: []
+    - rid: 4987709709510508565
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: target
+        _name: target
+        connections: []
+        defaultValue:
+          rid: 4987709709510508569
+    - rid: 4987709709510508566
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: value
+        _name: value
+        connections:
+        - rid: 4987709709510508836
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508567
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709709510508579
+    - rid: 4987709709510508568
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections:
+        - rid: 4987709709510508629
+    - rid: 4987709709510508569
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 512
+        startSerializedType:
+          rid: 4987709709510508571
+        targetSerializedType:
+          rid: 4987709709510508572
+        _items:
+        - name: m_Timer
+          reference:
+            rid: 4987709709510508573
+          parameters: []
+          genericArguments: []
+        _instance:
+          rid: 4987709709510508574
+    - rid: 4987709709510508571
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 0
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508572
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508573
+      type: {class: VariableRef, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 28
+        _name: m_Timer
+        unityObject: {fileID: 11400000}
+        _type:
+          kind: 1
+          serializedString: System.Single
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508574
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references: []
+          data: 
+          serializationNodes: []
+          serializedType: 
+        serializedType:
+          kind: 1
+          serializedString: System.Object
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508579
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508567
+        output:
+          rid: 4987709242143146192
+    - rid: 4987709709510508623
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: If 12
+        _id: 33
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 191.99995
+          y: 372.09753
+          width: 150
+          height: 94
+        _nodeSerializedData:
+          data: 022f0000000001290000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f0064006500490066002c00200075004e006f006400650033002e0043006f00720065000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508624
+          serializedValueOutput: []
+          serializedFlowInput:
+          - rid: 4987709709510508625
+          serializedFlowOutput:
+          - rid: 4987709709510508626
+          - rid: 4987709709510508627
+          - rid: 4987709709510508628
+          serializedType: MaxyGames.UNode.Nodes.NodeIf
+        _invalidPorts: []
+    - rid: 4987709709510508624
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: condition
+        _name: condition
+        connections:
+        - rid: 4987709709510508640
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508625
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709709510508629
+    - rid: 4987709709510508626
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: onTrue
+        _name: onTrue
+        connections:
+        - rid: 4987709709510508796
+    - rid: 4987709709510508627
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: onFalse
+        _name: onFalse
+        connections: []
+    - rid: 4987709709510508628
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: Exit
+        connections:
+        - rid: 4987709709510508768
+    - rid: 4987709709510508629
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508625
+        output:
+          rid: 4987709709510508568
+    - rid: 4987709709510508632
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 13
+        _id: 34
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 57.413986
+          y: 413
+          width: 116
+          height: 56
+        _nodeSerializedData:
+          data: 022f0000000001310000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0043006f006d00700061007200690073006f006e004e006f00640065002c00200075004e006f006400650033002e0043006f0072006500000000001d010c0000006f00700065007200610074006f0072004b0069006e00640002000000000000000b010900000069006e0070007500740054007900700065000000000005
+          serializedReferences:
+          - value:
+              rid: 4987709709510508633
+            unityObject: {fileID: 0}
+          serializedValueInput:
+          - rid: 4987709709510508634
+          - rid: 4987709709510508635
+          serializedValueOutput:
+          - rid: 4987709709510508636
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.ComparisonNode
+        _invalidPorts: []
+    - rid: 4987709709510508633
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508634
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: inputA
+        _name: inputA
+        connections: []
+        defaultValue:
+          rid: 4987709709510508637
+    - rid: 4987709709510508635
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: inputB
+        _name: inputB
+        connections: []
+        defaultValue:
+          rid: 4987709709510508638
+    - rid: 4987709709510508636
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709709510508640
+    - rid: 4987709709510508637
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 512
+        startSerializedType:
+          rid: 4987709709510508641
+        targetSerializedType:
+          rid: 4987709709510508642
+        _items:
+        - name: m_Timer
+          reference:
+            rid: 4987709709510508643
+          parameters: []
+          genericArguments: []
+        _instance:
+          rid: 4987709709510508644
+    - rid: 4987709709510508638
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 2
+        startSerializedType:
+          rid: 4987709709510508646
+        targetSerializedType:
+          rid: 4987709709510508647
+        _items: []
+        _instance:
+          rid: 4987709709510508648
+    - rid: 4987709709510508640
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508624
+        output:
+          rid: 4987709709510508636
+    - rid: 4987709709510508641
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 0
+        serializedString: UnityEngine.MonoBehaviour
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508642
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508643
+      type: {class: VariableRef, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 28
+        _name: m_Timer
+        unityObject: {fileID: 11400000}
+        _type:
+          kind: 1
+          serializedString: System.Single
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508644
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references:
+          - {fileID: 11400000}
+          data: 022f0000000001280000004d00610078007900470061006d00650073002e0055004e006f00640065002e005600610072006900610062006c0065005200650066002c00200075004e006f006400650033002e0043006f0072006500000000001701030000005f00690064001c0000002701050000005f006e0061006d00650001070000006d005f00540069006d00650072000b010b00000075006e006900740079004f0062006a00650063007400000000000101050000005f0074007900700065002f01000000012b0000004d00610078007900470061006d00650073002e0055004e006f00640065002e00530065007200690061006c0069007a006500640054007900700065002c00200075004e006f006400650033002e0043006f0072006500010000001d01040000006b0069006e0064000100000000000000270110000000730065007200690061006c0069007a006500640053007400720069006e006700010d000000530079007300740065006d002e00530069006e0067006c0065000505
+          serializationNodes: []
+          serializedType: 
+        serializedType:
+          kind: 1
+          serializedString: MaxyGames.UNode.VariableRef
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508646
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508647
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 0
+        serializedString: 
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508648
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references: []
+          data: 022f000000000117000000530079007300740065006d002e00530069006e0067006c0065002c0020006d00730063006f0072006c006900620000000000200000000005
+          serializationNodes: []
+          serializedType: System.Object
+        serializedType:
+          kind: 1
+          serializedString: System.Single
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508649
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Foreach ( Entities ) 14
+        _id: 35
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -20.499886
+          y: 603.06976
+          width: 282
+          height: 118
+        _nodeSerializedData:
+          data: 022f0000000001320000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0045006e0074006900740069006500730046006f00720065006100630068002c00200075004e006f006400650033002e0044004f005400530000000000010105000000640061007400610073002f010000000166000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0045006e0074006900740069006500730046006f00720065006100630068002b0044006100740061002c00200075004e006f006400650033002e0044004f00540053005d005d002c0020006d00730063006f0072006c006900620001000000060100000000000000022f0200000001370000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e0045006e0074006900740069006500730046006f00720065006100630068002b0044006100740061002c00200075004e006f006400650033002e0044004f00540053000200000027010200000069006400011000000033006400650032003500360033003800340061006400360064003900610032002d01040000006e0061006d0065000b01040000007400790070006500000000001d01040000006b0069006e00640003000000000000000507051d0105000000720075006e004f006e0000000000000000002b010c0000006200750072007300740043006f006d00700069006c006500001d01070000006f007000740069006f006e00730008000000000000001d010900000069006e006400650078004b0069006e006400000000000000000001010c00000071007500650072007900460069006c0074006500720073002f03000000015a000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e0045004300530051007500650072007900460069006c007400650072002c00200075004e006f006400650033002e0044004f00540053005d005d002c0020006d00730063006f0072006c0069006200030000000600000000000000000705010119000000770069007400680053006800610072006500640043006f006d0070006f006e0065006e007400460069006c007400650072002f04000000015a000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e00530065007200690061006c0069007a006500640054007900700065002c00200075004e006f006400650033002e0043006f00720065005d005d002c0020006d00730063006f0072006c006900620004000000060000000000000000070505
+          serializedReferences:
+          - value:
+              rid: 4987709709510508740
+            unityObject: {fileID: 0}
+          serializedValueInput: []
+          serializedValueOutput:
+          - rid: 4987709709510508651
+          - rid: 4987709709510508652
+          serializedFlowInput:
+          - rid: 4987709709510508653
+          serializedFlowOutput:
+          - rid: 4987709709510508654
+          - rid: 4987709709510508655
+          serializedType: MaxyGames.UNode.Nodes.EntitiesForeach
+        _invalidPorts: []
+    - rid: 4987709709510508651
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: entity
+        _name: entity
+        connections: []
+    - rid: 4987709709510508652
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 3de256384ad6d9a2
+        _name: enableableRotationSpeed
+        connections:
+        - rid: 4987709709510508751
+    - rid: 4987709709510508653
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709709510508808
+    - rid: 4987709709510508654
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: body
+        _name: body
+        connections:
+        - rid: 4987709709510508755
+    - rid: 4987709709510508655
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: Exit
+        connections: []
+    - rid: 4987709709510508740
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: HelloCube.EnableableComponents.EnableableRotationSpeed
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508741
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Set Value 15
+        _id: 36
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 66.500114
+          y: 747.06976
+          width: 77
+          height: 68
+        _nodeSerializedData:
+          data: 022f00000000012f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f0064006500530065007400560061006c00750065002c00200075004e006f006400650033002e0043006f0072006500000000001d01070000007300650074005400790070006500000000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508743
+          - rid: 4987709709510508744
+          serializedValueOutput: []
+          serializedFlowInput:
+          - rid: 4987709709510508745
+          serializedFlowOutput:
+          - rid: 4987709709510508746
+          serializedType: MaxyGames.UNode.Nodes.NodeSetValue
+        _invalidPorts: []
+    - rid: 4987709709510508742
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 16
+        _id: 37
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -107.499886
+          y: 756.06976
+          width: 69
+          height: 26
+        _nodeSerializedData:
+          data: 022f00000000012e0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f00640065005200650072006f007500740065002c00200075004e006f006400650033002e0043006f0072006500000000001d01040000006b0069006e006400010000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508747
+          serializedValueOutput:
+          - rid: 4987709709510508748
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.NodeReroute
+        _invalidPorts:
+        - rid: 4987709709510508749
+        - rid: 4987709709510508750
+    - rid: 4987709709510508743
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: target
+        _name: target
+        connections:
+        - rid: 4987709709510508752
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508744
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: value
+        _name: value
+        connections:
+        - rid: 4987709709510508759
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508745
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709709510508755
+    - rid: 4987709709510508746
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709709510508747
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: input
+        _name: input
+        connections:
+        - rid: 4987709709510508751
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508748
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709709510508752
+        - rid: 4987709709510508763
+    - rid: 4987709709510508749
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections: []
+    - rid: 4987709709510508750
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709709510508751
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 1
+        input:
+          rid: 4987709709510508747
+        output:
+          rid: 4987709709510508652
+    - rid: 4987709709510508752
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508743
+        output:
+          rid: 4987709709510508748
+    - rid: 4987709709510508755
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508745
+        output:
+          rid: 4987709709510508654
+    - rid: 4987709709510508756
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Not {!} 17
+        _id: 38
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -18.499886
+          y: 783.06976
+          width: 72
+          height: 32
+        _nodeSerializedData:
+          data: 022f00000000012a0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f0074004e006f00640065002c00200075004e006f006400650033002e0043006f00720065000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508757
+          serializedValueOutput:
+          - rid: 4987709709510508758
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.NotNode
+        _invalidPorts: []
+    - rid: 4987709709510508757
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: target
+        _name: target
+        connections:
+        - rid: 4987709709510508763
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508758
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709709510508759
+    - rid: 4987709709510508759
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508744
+        output:
+          rid: 4987709709510508758
+    - rid: 4987709709510508763
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508757
+        output:
+          rid: 4987709709510508748
+    - rid: 4987709709510508768
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146210
+        output:
+          rid: 4987709709510508628
+    - rid: 4987709709510508791
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Set Value 18
+        _id: 39
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 182.99998
+          y: 488.83664
+          width: 77
+          height: 68
+        _nodeSerializedData:
+          data: 022f00000000012f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f0064006500530065007400560061006c00750065002c00200075004e006f006400650033002e0043006f0072006500000000001d01070000007300650074005400790070006500000000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508792
+          - rid: 4987709709510508793
+          serializedValueOutput: []
+          serializedFlowInput:
+          - rid: 4987709709510508794
+          serializedFlowOutput:
+          - rid: 4987709709510508795
+          serializedType: MaxyGames.UNode.Nodes.NodeSetValue
+        _invalidPorts: []
+    - rid: 4987709709510508792
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: target
+        _name: target
+        connections: []
+        defaultValue:
+          rid: 4987709709510508797
+    - rid: 4987709709510508793
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: value
+        _name: value
+        connections: []
+        defaultValue:
+          rid: 4987709709510508798
+    - rid: 4987709709510508794
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections:
+        - rid: 4987709709510508796
+    - rid: 4987709709510508795
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections:
+        - rid: 4987709709510508808
+    - rid: 4987709709510508796
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508794
+        output:
+          rid: 4987709709510508626
+    - rid: 4987709709510508797
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 512
+        startSerializedType:
+          rid: 4987709709510508800
+        targetSerializedType:
+          rid: 4987709709510508801
+        _items:
+        - name: m_Timer
+          reference:
+            rid: 4987709709510508802
+          parameters: []
+          genericArguments: []
+        _instance:
+          rid: 4987709709510508803
+    - rid: 4987709709510508798
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 512
+        startSerializedType:
+          rid: 4987709709510508804
+        targetSerializedType:
+          rid: 4987709709510508805
+        _items:
+        - name: k_Interval
+          reference:
+            rid: 4987709709510508806
+          parameters: []
+          genericArguments: []
+        _instance:
+          rid: 4987709709510508807
+    - rid: 4987709709510508800
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 0
+        serializedString: UnityEngine.MonoBehaviour
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508801
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508802
+      type: {class: VariableRef, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 28
+        _name: m_Timer
+        unityObject: {fileID: 11400000}
+        _type:
+          kind: 1
+          serializedString: System.Single
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508803
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references:
+          - {fileID: 11400000}
+          data: 022f0000000001280000004d00610078007900470061006d00650073002e0055004e006f00640065002e005600610072006900610062006c0065005200650066002c00200075004e006f006400650033002e0043006f0072006500000000001701030000005f00690064001c0000002701050000005f006e0061006d00650001070000006d005f00540069006d00650072000b010b00000075006e006900740079004f0062006a00650063007400000000000101050000005f0074007900700065002f01000000012b0000004d00610078007900470061006d00650073002e0055004e006f00640065002e00530065007200690061006c0069007a006500640054007900700065002c00200075004e006f006400650033002e0043006f0072006500010000001d01040000006b0069006e0064000100000000000000270110000000730065007200690061006c0069007a006500640053007400720069006e006700010d000000530079007300740065006d002e00530069006e0067006c0065000505
+          serializationNodes: []
+          serializedType: 
+        serializedType:
+          kind: 1
+          serializedString: MaxyGames.UNode.VariableRef
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508804
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 0
+        serializedString: UnityEngine.MonoBehaviour
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508805
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508806
+      type: {class: VariableRef, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: 29
+        _name: k_Interval
+        unityObject: {fileID: 11400000}
+        _type:
+          kind: 1
+          serializedString: System.Single
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508807
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references:
+          - {fileID: 11400000}
+          data: 022f0000000001280000004d00610078007900470061006d00650073002e0055004e006f00640065002e005600610072006900610062006c0065005200650066002c00200075004e006f006400650033002e0043006f0072006500000000001701030000005f00690064001d0000002701050000005f006e0061006d006500010a0000006b005f0049006e00740065007200760061006c000b010b00000075006e006900740079004f0062006a00650063007400000000000101050000005f0074007900700065002f01000000012b0000004d00610078007900470061006d00650073002e0055004e006f00640065002e00530065007200690061006c0069007a006500640054007900700065002c00200075004e006f006400650033002e0043006f0072006500010000001d01040000006b0069006e0064000100000000000000270110000000730065007200690061006c0069007a006500640053007400720069006e006700010d000000530079007300740065006d002e00530069006e0067006c0065000505
+          serializationNodes: []
+          serializedType: 
+        serializedType:
+          kind: 1
+          serializedString: MaxyGames.UNode.VariableRef
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508808
+      type: {class: FlowConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508653
+        output:
+          rid: 4987709709510508795
+    - rid: 4987709709510508830
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 17
+        _id: 40
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: 133
+          y: 256
+          width: 170
+          height: 100
+        _nodeSerializedData:
+          data: 022f00000000012e0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004e006f006400650073002e004e006f00640065005200650072006f007500740065002c00200075004e006f006400650033002e0043006f0072006500000000001d01040000006b0069006e006400010000000000000005
+          serializedReferences: []
+          serializedValueInput:
+          - rid: 4987709709510508831
+          serializedValueOutput:
+          - rid: 4987709709510508832
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.Nodes.NodeReroute
+        _invalidPorts:
+        - rid: 4987709709510508833
+        - rid: 4987709709510508834
+    - rid: 4987709709510508831
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: input
+        _name: input
+        connections:
+        - rid: 4987709709510508835
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508832
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: output
+        _name: Out
+        connections:
+        - rid: 4987709709510508836
+    - rid: 4987709709510508833
+      type: {class: FlowInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: enter
+        _name: 
+        connections: []
+    - rid: 4987709709510508834
+      type: {class: FlowOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: exit
+        _name: 
+        connections: []
+    - rid: 4987709709510508835
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 1
+        input:
+          rid: 4987709709510508831
+        output:
+          rid: 4987709242143146189
+    - rid: 4987709709510508836
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508566
+        output:
+          rid: 4987709709510508832
+    - rid: 4987709709510508843
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: HelloCube.EnableableComponents.EnableableRotationSpeed
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508852
+      type: {class: NodeObject, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _name: Node 17
+        _id: 41
+        _comment: 
+        _parent:
+          rid: 4987709242143146180
+        childs: []
+        expanded: 1
+        nodeExpanded: 1
+        position:
+          serializedVersion: 2
+          x: -268
+          y: 1184
+          width: 179
+          height: 28
+        _nodeSerializedData:
+          data: 022f00000000012d0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004d0075006c007400690070007500720070006f00730065004e006f00640065002c00200075004e006f006400650033002e0043006f0072006500000000000101060000006d0065006d006200650072002f01000000012f0000004d00610078007900470061006d00650073002e0055004e006f00640065002e004d0075006c007400690070007500720070006f00730065004d0065006d006200650072002c00200075004e006f006400650033002e0043006f0072006500010000000b01060000007400610072006700650074000000000001010c00000069006e0069007400690061006c0069007a006500720073002f02000000016e000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b004d00610078007900470061006d00650073002e0055004e006f00640065002e004d0075006c007400690070007500720070006f00730065004d0065006d006200650072002b0049006e0069007400690061006c0069007a006500720044006100740061002c00200075004e006f006400650033002e0043006f00720065005d005d002c0020006d00730063006f0072006c0069006200020000000600000000000000000705052b01130000007500730065004f007500740070007500740050006100720061006d00650074006500720073000105
+          serializedReferences:
+          - value:
+              rid: 4987709709510508853
+            unityObject: {fileID: 0}
+          serializedValueInput:
+          - rid: 4987709709510508854
+          serializedValueOutput:
+          - rid: 4987709709510508855
+          serializedFlowInput: []
+          serializedFlowOutput: []
+          serializedType: MaxyGames.UNode.MultipurposeNode
+        _invalidPorts: []
+    - rid: 4987709709510508853
+      type: {class: MemberData, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _isStatic: 0
+        _targetType: 8
+        startSerializedType:
+          rid: 4987709709510508857
+        targetSerializedType:
+          rid: 4987709709510508858
+        _items:
+        - name: EnableableRotationSpeed
+          reference:
+            rid: -2
+          parameters: []
+          genericArguments: []
+        - name: RadiansPerSecond
+          reference:
+            rid: -2
+          parameters: []
+          genericArguments: []
+        _instance:
+          rid: 4987709709510508859
+    - rid: 4987709709510508854
+      type: {class: ValueInput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: -instance
+        _name: instance
+        connections:
+        - rid: 4987709709510508856
+        defaultValue:
+          rid: -2
+    - rid: 4987709709510508855
+      type: {class: ValueOutput, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        _id: out
+        _name: out
+        connections:
+        - rid: 4987709709510508862
+    - rid: 4987709709510508856
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709709510508854
+        output:
+          rid: 4987709249039630415
+    - rid: 4987709709510508857
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: HelloCube.EnableableComponents.EnableableRotationSpeed
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508858
+      type: {class: SerializedType, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        kind: 1
+        serializedString: System.Single
+        serializedBytes: 
+        references: []
+    - rid: 4987709709510508859
+      type: {class: SerializedValue, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        serializedData:
+          format: 0
+          references: []
+          data: 
+          serializationNodes: []
+          serializedType: 
+        serializedType:
+          kind: 1
+          serializedString: System.Object
+          serializedBytes: 
+          references: []
+    - rid: 4987709709510508862
+      type: {class: ValueConnection, ns: MaxyGames.UNode, asm: uNode3.Core}
+      data:
+        isProxy: 0
+        input:
+          rid: 4987709242143146310
+        output:
+          rid: 4987709709510508855
